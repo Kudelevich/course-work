@@ -1,0 +1,248 @@
+header{
+  width:100%;
+  display:table;
+  background-image: url(../Курсовая/pictures/Листья_edited.jpg);
+  border-top: 8px solid #272b2a;
+  font-family: Romul;
+  border-bottom: 8px double #fff;
+}
+nav{
+  width:100%;
+  padding-right:15px;
+  padding-left:15px;
+  margin-right:auto;
+  margin-left:auto;
+}
+.toggle-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-color:#272b2a8e;
+  width:30px;
+  height:30px;
+  position:absolute;
+}
+@media (min-width: 1200px) {
+nav{
+  max-width:1140px;
+}
+}
+#logo{
+  float:left;
+  font-size: 50px;
+  font-family: Vogue;
+  color: #272b2a;
+  text-decoration: none;
+  padding: 11px 0;
+  margin-left: 10%;
+}
+nav{
+  width:auto;
+  float:right;
+  margin-top: 15px;
+  font-weight: bold;
+  margin-right: 5%;
+}
+nav ul li{
+  float:left;
+  list-style-type:none;
+}
+nav ul li a{
+  color:#e4f2ff;
+  font-size: 20px;
+  padding: 7px 19px;
+  display:inline-block;
+  text-decoration:none;
+}
+input[type=checkbox],label{
+  display:none;
+}
+@media only screen and (max-width: 980px) {
+  header{
+    padding: 15px 0;
+  }
+  #logo{
+    padding:0;
+  }
+  input[type=checkbox]{
+    position:absolute;
+    top:-9999px;
+    left:-9999px;
+  }
+  label{
+    float: right; 
+    display: block;
+    cursor: pointer;
+    margin-right: 65px;
+  }
+  input[type=checkbox]:checked ~ nav{
+    display:block;
+  }
+  nav{
+    display:none;
+    position:absolute;
+    top: 70px;
+    background-color: #cfcabc;
+    padding:0;
+    z-index:99;
+    width:100%;
+  }
+  nav ul li{
+    float:left;
+    padding:0;
+    width:100%;
+    display:table;
+  }
+  nav ul li a{
+    color:#FFF;
+    font-size:15px;
+    padding:10px 20px;
+    display:block;
+    border-bottom:1px solid rgba(225,225,225,0.1);
+  }
+.div_4{
+  font-size: 10px;
+}
+.div_4 p{
+  line-height: 15px;
+}
+.foot_item_text{
+  font-size: 8px;
+}
+  }
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 7;}
+
+  
+footer{
+  background-color: #272b2a;
+  color: #fff;
+  font-family: Romul;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+  padding: 20px;
+}
+.flex-items a{
+  text-decoration: none;
+  color: #fff;
+}
+.flex-items a:hover{
+  color: #34663e;
+}
+.flex-items:nth-child(1) {
+  font-size: 70px;
+  font-family: Vogue;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+  
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+  
+.flex-items:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+.foot_item_text{
+  font-size: 10px;
+}
+
+.div_4 {  
+  margin-top: 2%;
+  font-family: Romul;
+  text-align: center;
+  line-height: 25px;
+  padding-bottom: 15px;
+}
+
+//*********************************************************************************************************************
+
+nav a {
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+nav a:after {
+  display: block;
+  content: "";
+  background-color: #34663e;
+  height: 3px;
+  width: 0%;
+  left: 50%;
+  position: absolute;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+nav a:hover:after,
+nav a:focus:after {
+  width: 100%;
+}
+
+
+#button {   
+  display: inline-block;   
+  background-color: #aaa69b73;   
+  width: 50px;   
+  height: 50px;   
+  text-align: center;   
+  border-radius: 4px;   
+  margin: 30px;   
+  position: fixed;   
+  bottom: 30px;   
+  right: 30px;   
+  transition: background-color .3s;   
+  z-index: 1000; 
+  transition: background-color .3s,
+  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+ } 
+ 
+#button:hover {   
+  cursor: pointer;   
+  background-color: #aaa69b; 
+} 
+#button:active {   
+  background-color: #555; 
+}
+#button::after {
+  content: '▲';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff; 
+ }
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+  
